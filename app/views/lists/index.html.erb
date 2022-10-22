@@ -1,4 +1,4 @@
-<% @movies.each do |movie| %>
-  <h1><%= movie.title %></h1>
+<% @lists.each do |list| %>
+  <h1><%= list.movie.title %></h1>
   <img src="<%= movie.poster_url %>" class="avatar">
   <% end %>

@@ -1,3 +1,6 @@
-<% @list.bookmarks do |bookmark| %>
-  <p><%= list.bookmark %></p>
+<% @list.bookmarks.each do |bookmark| %>
+  <% @movie = Movie.find(bookmark.movie_id) %>
+  <p><%= bookmark.comment %></p>
+  <p><%= @movie.title %></p>
+  <br>
   <% end %>

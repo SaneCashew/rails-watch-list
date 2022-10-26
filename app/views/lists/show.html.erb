@@ -1,3 +1,5 @@
+<%= cl_image_tag @list.photo.key, crop: :thumb %>
+
 <% @list.bookmarks.each do |bookmark| %>
   <% @movie = Movie.find(bookmark.movie_id) %>
   <p><%= bookmark.comment %></p>
